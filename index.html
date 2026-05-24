@@ -458,6 +458,9 @@
 <style id="bp-section-redesign">
   .bp-section-slide{overflow:auto}.bp-section-frame{padding-top:4.4vh!important;display:flex!important;flex-direction:column!important;min-height:76vh!important}.bp-section-kicker{font-family:var(--mono);font-size:12px;letter-spacing:.26em;text-transform:uppercase;opacity:.52;margin-bottom:1.8vh}.bp-section-title{font-family:var(--serif-zh);font-size:min(4.4vw,7.2vh);line-height:1.08;font-weight:700;letter-spacing:-.02em;max-width:88vw}.bp-section-lead{font-family:var(--sans-zh);font-size:max(15px,1vw);line-height:1.62;opacity:.72;max-width:78vw;margin-top:2vh;overflow-wrap:anywhere}.bp-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2vw;margin-top:3.6vh}.bp-card-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.bp-card-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}.bp-card{border-top:1px solid rgba(var(--ink-rgb),.35);border-bottom:1px solid rgba(var(--ink-rgb),.13);background:rgba(var(--paper-rgb),.32);padding:2vh 1.35vw;min-height:22vh;overflow:auto}.bp-card-label{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.46;margin-bottom:1.2vh}.bp-card-sublabel{margin-top:1.4vh}.bp-card h3{font-family:var(--serif-zh);font-size:max(19px,1.45vw);line-height:1.18;margin-bottom:1.2vh}.bp-card p,.bp-card li{font-family:var(--sans-zh);font-size:max(13px,.82vw);line-height:1.52;opacity:.74;overflow-wrap:anywhere}.bp-card ul{padding-left:1.1em;display:flex;flex-direction:column;gap:.65vh}.bp-big-number{font-family:var(--serif-en),var(--serif-zh);font-size:min(4.6vw,7vh);font-weight:800;line-height:.92;letter-spacing:-.05em;margin-bottom:1vh}.bp-mini-table{display:grid;grid-template-columns:1.1fr 1.2fr 2fr;gap:0;border-top:1px solid rgba(var(--ink-rgb),.28);margin-top:3vh}.bp-mini-row{display:contents}.bp-mini-cell{border-bottom:1px solid rgba(var(--ink-rgb),.14);padding:1.15vh .9vw;font-family:var(--sans-zh);font-size:max(12px,.78vw);line-height:1.42;overflow-wrap:anywhere}.bp-mini-head{font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;opacity:.55}.bp-timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1vw;margin-top:3.4vh}.bp-timeline .bp-card{min-height:46vh}.bp-quote-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2vw;margin-top:3.4vh}.bp-quote{border-left:2px solid currentColor;padding:1.5vh 1.3vw;background:rgba(var(--paper-rgb),.26)}.bp-quote h3{font-family:var(--serif-zh);font-size:max(18px,1.35vw);line-height:1.2;margin-bottom:1vh}.bp-quote p{font-family:var(--sans-zh);font-size:max(13px,.82vw);line-height:1.52;opacity:.74}.bp-contact{display:flex;gap:2vw;flex-wrap:wrap;margin-top:4vh;font-family:var(--mono);font-size:max(13px,.92vw);letter-spacing:.04em}.bp-contact span{border-top:1px solid currentColor;padding-top:1vh;opacity:.8}@media (max-width:1100px){.bp-card-grid,.bp-card-grid.four,.bp-timeline,.bp-quote-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bp-card-grid.two{grid-template-columns:1fr}.bp-section-title{font-size:6vw}.bp-mini-table{grid-template-columns:1fr}.bp-mini-row{display:block;border-bottom:1px solid rgba(var(--ink-rgb),.14)}.bp-mini-cell{border-bottom:0;display:block}}@media (max-width:760px){.bp-section-slide{display:block!important;min-height:100vh!important;color:var(--ink)!important;background:var(--paper)!important}.bp-section-slide [data-anim]{opacity:1!important;transform:none!important}.bp-section-frame{display:block!important;min-height:auto!important;padding-top:0!important}.bp-section-title{font-size:11vw!important;max-width:none!important}.bp-section-lead{font-size:16px!important;max-width:none!important}.bp-card-grid,.bp-card-grid.two,.bp-card-grid.four,.bp-timeline,.bp-quote-grid{display:block!important}.bp-card,.bp-timeline .bp-card{min-height:0!important;padding:22px 0!important;margin-bottom:20px!important;background:transparent!important;overflow:visible!important}.bp-card h3,.bp-quote h3{font-size:24px!important}.bp-card p,.bp-card li,.bp-quote p,.bp-mini-cell{font-size:16px!important}.bp-big-number{font-size:13vw!important}.bp-quote{padding:18px 0 18px 16px;margin-bottom:18px;background:transparent!important}.bp-contact{display:block!important}.bp-contact span{display:block;margin-bottom:14px}}
 </style>
+<style id="bp-layout-diversity-fix">
+  .bp-section-slide,.bp-market-slide,.bp-summary-slide{overflow-y:auto!important;overflow-x:hidden!important}.bp-section-slide .frame,.bp-market-slide .frame,.bp-summary-slide .frame{max-height:none!important;min-height:auto!important;padding-bottom:4vh!important}.bp-section-slide .foot,.bp-market-slide .foot,.bp-summary-slide .foot{margin-top:3vh!important}.bp-section-slide::-webkit-scrollbar,.bp-market-slide::-webkit-scrollbar,.bp-summary-slide::-webkit-scrollbar{width:8px}.bp-section-slide::-webkit-scrollbar-thumb,.bp-market-slide::-webkit-scrollbar-thumb,.bp-summary-slide::-webkit-scrollbar-thumb{background:rgba(var(--ink-rgb),.22);border-radius:999px}.bp-solution .bp-card-grid.two{grid-template-columns:1fr 1fr;margin-top:3vh}.bp-solution .bp-card-grid:not(.two){grid-template-columns:repeat(3,1fr);margin-top:2vh}.bp-solution .bp-section-lead{font-family:var(--serif-zh);font-size:max(20px,1.55vw);line-height:1.42;max-width:86vw;border-left:3px solid currentColor;padding-left:1.4vw}.bp-product .bp-card-grid:first-of-type{grid-template-columns:1.25fr 1fr 1.35fr}.bp-product .bp-card-grid.two{grid-template-columns:1fr 1fr;margin-top:1.5vh}.bp-product .bp-card-grid.two .bp-card{background:rgba(var(--ink-rgb),.05);min-height:12vh}.bp-business .bp-section-title{max-width:72vw;font-size:min(3.8vw,6.4vh)}.bp-business .bp-card-grid:first-of-type{grid-template-columns:repeat(3,1fr);margin-top:2.8vh}.bp-business .bp-card-grid.four{grid-template-columns:repeat(4,1fr);margin-top:1.8vh}.bp-business .bp-card-grid.four .bp-card{min-height:27vh}.bp-validation .bp-quote-grid{grid-template-columns:1.1fr .9fr;grid-auto-flow:row}.bp-validation .bp-quote:nth-child(1){grid-row:span 2}.bp-validation .bp-quote:nth-child(1) p{font-family:var(--serif-zh);font-size:max(16px,1.02vw);line-height:1.55}.bp-roadmap .bp-timeline{display:grid;grid-template-columns:1fr;gap:1.4vh;margin-top:2.8vh}.bp-roadmap .bp-timeline .bp-card{display:grid;grid-template-columns:.75fr 1.15fr 1.15fr;gap:1.2vw;min-height:0;padding:1.4vh 1.2vw;overflow:visible}.bp-roadmap .bp-timeline .bp-card>h3{grid-column:1;grid-row:1 / span 4;margin:0;font-size:max(18px,1.25vw)}.bp-roadmap .bp-timeline .bp-card>.bp-card-label:first-child{grid-column:1}.bp-roadmap .bp-timeline .bp-card ul{display:block;padding-left:1.1em}.bp-moat .bp-card-grid{grid-template-columns:.9fr 1.25fr .9fr}.bp-moat .bp-card:nth-child(2){background:rgba(var(--ink-rgb),.06)}.bp-team .bp-card-grid.two{grid-template-columns:1fr 1fr}.bp-team .bp-section-title{font-size:min(3.7vw,6.1vh);max-width:84vw}.bp-financing .bp-card-grid{grid-template-columns:1fr 1fr 1fr;margin-top:2vh}.bp-financing .bp-card-grid:nth-of-type(2) .bp-card h3{font-family:var(--serif-en);font-size:min(4.2vw,6.5vh);line-height:.95}.bp-financing .bp-card-grid:nth-of-type(3){grid-template-columns:1fr}.bp-financing .bp-card-grid:nth-of-type(3) .bp-card{min-height:0}.bp-closing{overflow:hidden!important}.bp-closing .bp-contact{max-width:82vw}@media (max-width:1100px){.bp-product .bp-card-grid:first-of-type,.bp-business .bp-card-grid.four,.bp-moat .bp-card-grid,.bp-roadmap .bp-timeline .bp-card{grid-template-columns:1fr 1fr}.bp-roadmap .bp-timeline .bp-card>h3{grid-column:auto;grid-row:auto}.bp-validation .bp-quote-grid{grid-template-columns:1fr}.bp-validation .bp-quote:nth-child(1){grid-row:auto}}@media (max-width:760px){.bp-section-slide,.bp-market-slide,.bp-summary-slide{overflow:visible!important}.bp-product .bp-card-grid:first-of-type,.bp-business .bp-card-grid.four,.bp-moat .bp-card-grid,.bp-financing .bp-card-grid,.bp-roadmap .bp-timeline .bp-card{display:block!important}.bp-business .bp-section-title,.bp-team .bp-section-title{font-size:11vw!important;max-width:none!important}.bp-closing{overflow:visible!important}}
+</style>
 
 </head>
 <body>
@@ -493,7 +496,7 @@
 
 <div id="deck">
 
-<section class="slide hero dark bp-cover-slide">
+<section class="slide hero dark bp-cover-slide bp-cover">
   <div class="frame bp-cover-frame">
     <img class="bp-cover-logo" src="images/entropyfield-logo-white.png" alt="Entropy Field logo" data-anim>
     <h1 class="bp-cover-title" data-anim>entroflow.ai：物理世界Stripe for Agents</h1>
@@ -501,7 +504,7 @@
   </div>
 </section>
 
-<section class="slide light bp-summary-slide">
+<section class="slide light bp-summary-slide bp-executive">
   <div class="chrome"><div>Overview</div><div>02 / 12</div></div>
   <div class="frame bp-summary-frame">
     <div class="bp-summary-head"><h2 class="bp-summary-title" data-anim>执行概要</h2></div>
@@ -535,7 +538,7 @@
   <div class="foot"><div>Page 02</div><div>Brief</div></div>
 </section>
 
-<section class="slide light bp-market-slide">
+<section class="slide light bp-market-slide bp-market">
   <div class="chrome"><div>市场转变 &amp; 痛点分析</div><div>03 / 12</div></div>
   <div class="frame bp-market-frame">
     <div class="bp-market-kicker" data-anim>数据</div>
@@ -580,7 +583,7 @@
   <div class="foot"><div>Page 03</div><div>Market</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-solution">
   <div class="chrome"><div>竞品分析 &amp; 解决方案</div><div>04 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Competition / Solution</div>
@@ -592,7 +595,7 @@
   <div class="foot"><div>Page 04</div><div>Solution</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-product">
   <div class="chrome"><div>产品</div><div>05 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Product</div>
@@ -603,7 +606,7 @@
   <div class="foot"><div>Page 05</div><div>Product</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-business">
   <div class="chrome"><div>商业模式</div><div>06 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Business Model</div>
@@ -615,7 +618,7 @@
   <div class="foot"><div>Page 06</div><div>Business</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-validation">
   <div class="chrome"><div>用户验证</div><div>07 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Customer Validation</div>
@@ -625,7 +628,7 @@
   <div class="foot"><div>Page 07</div><div>Validation</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-roadmap">
   <div class="chrome"><div>路线图</div><div>08 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Roadmap</div>
@@ -635,7 +638,7 @@
   <div class="foot"><div>Page 08</div><div>Roadmap</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-moat">
   <div class="chrome"><div>壁垒</div><div>09 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Moat</div>
@@ -645,7 +648,7 @@
   <div class="foot"><div>Page 09</div><div>Moat</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-team">
   <div class="chrome"><div>团队</div><div>10 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Team</div>
@@ -655,7 +658,7 @@
   <div class="foot"><div>Page 10</div><div>Team</div></div>
 </section>
 
-<section class="slide light bp-section-slide">
+<section class="slide light bp-section-slide bp-financing">
   <div class="chrome"><div>融资计划</div><div>11 / 12</div></div>
   <div class="frame bp-section-frame">
     <div class="bp-section-kicker" data-anim>Financing</div>
@@ -667,7 +670,7 @@
   <div class="foot"><div>Page 11</div><div>Financing</div></div>
 </section>
 
-<section class="slide hero dark bp-section-slide">
+<section class="slide hero dark bp-section-slide bp-closing">
   <div class="chrome"><div>愿景 &amp; 联系方式</div><div>12 / 12</div></div>
   <div class="frame bp-section-frame" style="justify-content:center!important">
     <div class="bp-section-kicker" data-anim>Vision</div>
@@ -899,6 +902,16 @@ addEventListener('keydown',e=>{
 
 let wheelTO=null,wheelAcc=0;
 addEventListener('wheel',e=>{
+  const active=slides[idx];
+  if(active){
+    const canScroll=active.scrollHeight>active.clientHeight+2;
+    const atTop=active.scrollTop<=1;
+    const atBottom=active.scrollTop+active.clientHeight>=active.scrollHeight-2;
+    if(canScroll && ((e.deltaY>0&&!atBottom)||(e.deltaY<0&&!atTop))){
+      wheelAcc=0;
+      return;
+    }
+  }
   wheelAcc+=e.deltaY+e.deltaX;
   if(Math.abs(wheelAcc)>50){
     if(wheelAcc>0 && window.__pipeAdvance && window.__pipeAdvance()){
