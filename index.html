@@ -498,9 +498,11 @@
   .bp-product .bp-scenario-grid>div{border-top:1px solid rgba(var(--ink-rgb),.22);padding-top:1.1vh}
   .bp-closing .bp-vision-grid{grid-template-columns:1fr!important;gap:5vh!important;align-items:start!important}
   .bp-closing .bp-vision-lines{max-width:none!important}
-  .bp-closing .bp-contact-panel{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;gap:2vw!important;align-items:center!important;justify-items:start!important}
-  .bp-closing .bp-contact-panel img{width:min(13vw,160px)!important}
-  .bp-closing .bp-contact{grid-template-columns:repeat(2,minmax(0,1fr));gap:.85vh 1.4vw!important}
+  .bp-closing .bp-vision-line{border-bottom:0!important;padding:1.15vh 0!important}
+  .bp-closing .bp-contact-panel{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;gap:2.2vw!important;align-items:center!important;justify-items:start!important;border-top:1px solid rgba(255,255,255,.32)!important;padding:2.4vh 0 0!important;width:100%}
+  .bp-closing .bp-contact-panel img{width:min(12vw,150px)!important;border-radius:18px}
+  .bp-closing .bp-contact{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:1vh 1.2vw!important;margin-top:0!important;width:min(68vw,980px)}
+  .bp-closing .bp-contact span{display:block!important;border:1px solid rgba(255,255,255,.18)!important;border-top:1px solid rgba(255,255,255,.18)!important;border-radius:14px;padding:1.05vh 1vw!important;background:rgba(255,255,255,.045);color:rgba(var(--paper-rgb),.82);line-height:1.35}
   .bp-team .bp-team-row.advisor{margin-top:2.2vh;border-top:2px solid rgba(var(--ink-rgb),.46);background:linear-gradient(90deg,rgba(var(--ink-rgb),.045),rgba(var(--ink-rgb),.02));padding:1.8vh 0}
   .bp-team .bp-team-row.advisor .bp-team-role{opacity:.62}
   .bp-business .bp-section-title{font-size:clamp(30px,4vw,58px)!important;max-width:100%!important;white-space:nowrap}
@@ -539,6 +541,8 @@
     .bp-validation .bp-quote-grid{display:block}
     .bp-validation .bp-quote{padding:18px 0 18px 16px}
     .bp-closing .bp-contact-panel{display:block!important}
+    .bp-closing .bp-contact{display:block!important;width:auto!important}
+    .bp-closing .bp-contact span{margin-bottom:10px}
   }
 </style>
 <style id="bp-responsive-stability-fix">
