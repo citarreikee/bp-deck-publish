@@ -479,6 +479,31 @@
   .bp-moat .bp-moat-stack{display:grid;grid-template-columns:1fr;gap:1.15vh;margin-top:1.8vh}.bp-moat .bp-moat-layer{border-top:1px solid rgba(var(--ink-rgb),.26);padding:1.25vh 0}.bp-moat .bp-moat-layer:last-child{border-bottom:1px solid rgba(var(--ink-rgb),.14)}.bp-moat .bp-moat-head{display:grid;grid-template-columns:.56fr 1fr;gap:1.5vw;align-items:start}.bp-moat .bp-moat-meta{font-family:var(--mono);font-size:max(11px,.68vw);letter-spacing:.16em;text-transform:uppercase;opacity:.46}.bp-moat .bp-moat-layer h3{font-family:var(--serif-zh);font-size:max(22px,1.62vw);line-height:1.12;margin:0 0 .7vh}.bp-moat .bp-moat-layer p{font-family:var(--sans-zh);font-size:max(12px,.76vw);line-height:1.48;opacity:.76;margin:0}.bp-moat .bp-moat-flywheel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9vw;margin-top:1.15vh;margin-left:calc(36% + .95vw)}.bp-moat .bp-moat-node{background:rgba(var(--ink-rgb),.045);border-top:1px solid rgba(var(--ink-rgb),.2);padding:1.15vh .9vw}.bp-moat .bp-moat-node h4{font-family:var(--serif-zh);font-size:max(16px,1.1vw);line-height:1.16;margin:0 0 .55vh}.bp-moat .bp-moat-node p{font-size:max(11px,.68vw);line-height:1.42}@media (max-width:900px){.bp-moat .bp-moat-head{grid-template-columns:1fr}.bp-moat .bp-moat-flywheel{grid-template-columns:1fr;margin-left:0}.bp-moat .bp-moat-node p{font-size:14px}}
   .bp-business .bp-business-stack{display:grid;grid-template-columns:1fr;gap:1.2vh;margin-top:2.2vh}.bp-business .bp-business-layer{border-top:1px solid rgba(var(--ink-rgb),.25);padding:1.35vh 0}.bp-business .bp-business-layer:last-child{border-bottom:1px solid rgba(var(--ink-rgb),.14)}.bp-business .bp-business-head{display:grid;grid-template-columns:.45fr 1fr;gap:1.5vw;align-items:start}.bp-business .bp-business-meta{font-family:var(--mono);font-size:max(11px,.68vw);letter-spacing:.16em;text-transform:uppercase;opacity:.46}.bp-business .bp-business-layer h3{font-family:var(--serif-zh);font-size:max(21px,1.55vw);line-height:1.12;margin:0 0 .7vh}.bp-business .bp-business-layer p,.bp-business .bp-business-layer li{font-family:var(--sans-zh);font-size:max(12px,.74vw);line-height:1.46;opacity:.76;margin:0}.bp-business .bp-business-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9vw;margin-top:1vh;margin-left:calc(31% + 1vw)}.bp-business .bp-business-card{background:rgba(var(--ink-rgb),.045);border-top:1px solid rgba(var(--ink-rgb),.2);padding:1.1vh .9vw}.bp-business .bp-business-card h4{font-family:var(--serif-zh);font-size:max(16px,1.08vw);line-height:1.16;margin:0 0 .5vh}.bp-business .bp-business-card strong{font-family:var(--serif-en),var(--serif-zh);font-size:max(24px,1.8vw);line-height:1;display:block;margin-bottom:.45vh}.bp-business .bp-business-note{font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;opacity:.52;margin-bottom:.45vh!important}@media (max-width:900px){.bp-business .bp-business-head{grid-template-columns:1fr}.bp-business .bp-business-cards{grid-template-columns:1fr;margin-left:0}.bp-business .bp-business-layer p,.bp-business .bp-business-layer li{font-size:15px}}
 </style>
+<style id="bp-slide-hierarchy-fix">
+  .bp-business .bp-section-title{font-size:clamp(30px,4vw,58px)!important;max-width:100%!important;white-space:nowrap}
+  .bp-validation .bp-section-frame{padding-top:6.8vh!important}
+  .bp-validation .bp-quote-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.1vw;margin-top:0}
+  .bp-validation .bp-quote{border-left:0;border-top:1px solid rgba(var(--ink-rgb),.34);background:rgba(var(--paper-rgb),.28);padding:2vh 1.1vw;min-height:58vh}
+  .bp-validation .bp-quote:nth-child(1){grid-row:auto}
+  .bp-validation .bp-quote h3{font-size:clamp(18px,1.5vw,25px);margin-bottom:1.6vh}
+  .bp-validation .bp-quote-main{font-family:var(--serif-zh)!important;font-size:clamp(16px,1.18vw,21px)!important;line-height:1.5!important;opacity:.94!important;margin-bottom:2vh}
+  .bp-validation .bp-quote p{font-size:clamp(12px,.78vw,15px);line-height:1.52}
+  .bp-validation .bp-quote span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.48;margin:1.4vh 0 .45vh}
+  .bp-financing .bp-section-frame{padding-top:7vh!important}
+  .bp-roadmap .bp-section-title{font-size:clamp(30px,4.8vw,56px)!important;line-height:1.08!important}
+  @media (orientation:landscape) and (min-width:761px){
+    .bp-roadmap .bp-section-title{font-size:clamp(30px,4.8vw,56px)!important;line-height:1.08!important}
+  }
+  @media (max-width:1100px){
+    .bp-business .bp-section-title{white-space:normal}
+    .bp-validation .bp-quote-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .bp-validation .bp-quote{min-height:0}
+  }
+  @media (max-width:760px){
+    .bp-validation .bp-quote-grid{display:block}
+    .bp-validation .bp-quote{padding:18px 0 18px 16px}
+  }
+</style>
 <style id="bp-responsive-stability-fix">
   @media (max-width:1180px){
     .slide{padding:5vh 5vw 9vh}
@@ -527,7 +552,7 @@
     .bp-roadmap{overflow:hidden!important}
     .bp-roadmap .foot{display:none}
     .bp-roadmap .bp-section-frame{padding-top:5.6vh!important;min-height:0!important;padding-bottom:0!important}
-    .bp-roadmap .bp-section-title{font-size:clamp(22px,3.4vw,42px)!important;line-height:1.05!important;max-width:92vw!important}
+    .bp-roadmap .bp-section-title{font-size:clamp(30px,4.8vw,56px)!important;line-height:1.08!important;max-width:92vw!important}
     .bp-roadmap .bp-timeline{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:1vw!important;margin-top:2.4vh!important}
     .bp-roadmap .bp-timeline .bp-card{display:flex!important;flex-direction:column!important;min-height:68vh!important;max-height:72vh!important;padding:1.7vh 1.05vw!important;overflow:hidden!important}
     .bp-roadmap .bp-timeline .bp-card>h3{font-size:clamp(15px,1.35vw,21px)!important;line-height:1.1!important;margin:0 0 .9vh!important}
@@ -722,7 +747,7 @@
 <section class="slide light bp-section-slide bp-business">
   <div class="chrome"><div>商业模式</div><div>06 / 12</div></div>
   <div class="frame bp-section-frame">
-    <h2 class="bp-section-title" data-anim>客户不为设备接入、代码开发付费，只为AI 落地物理世界的确定性结果和可量化的 ROI 付费。</h2>
+    <h2 class="bp-section-title" data-anim>只为确定性结果和可量化 ROI 付费</h2>
     <div class="bp-business-stack">
       <article class="bp-business-layer" data-anim>
         <div class="bp-business-head"><div class="bp-business-meta">Layer 01 / Who Pays</div><div><h3>优先服务高价值、多设备、非确定性任务场景</h3><p>聚焦科研实验室、高端工业产线、甲级写字楼宇等 B 端场景；同时服务 AI Agent 开发者和硬件 / 机器人厂商，形成开发者生态与企业付费的双入口。</p></div></div>
@@ -751,8 +776,7 @@
 <section class="slide light bp-section-slide bp-validation">
   <div class="chrome"><div>用户验证</div><div>07 / 12</div></div>
   <div class="frame bp-section-frame">
-    <h2 class="bp-section-title" data-anim>用户验证</h2>
-    <div class="bp-quote-grid"><article class="bp-quote" data-anim><h3>众擎机器人（深圳展厅机器人联通）</h3><p>我们在落地商业项目的同时，本身也要找一个场景物联网集成方进行落地部署工作。</p><p>如果有一个统一用户界面，可以调动多台机器人，自然语言交互，这种应用每一个用户都需要，并且可以大大降低部署和二次开发成本。</p></article><article class="bp-quote" data-anim><h3>颗粒进化xlean（清洁机器人物联网场景联通）</h3><p>我们开始探索本体与智能家居的联动场景，但是打通每一家协议费时费力，你们像物联网上的openrouter，交一份钱，一个API全打通。</p><p>后面与其他智能硬件的通讯，类似于A2A通讯，也可以与entroflow一起协作。</p></article><article class="bp-quote" data-anim><h3>碧桂园物业（物业系统设备集成）</h3><p>我们大批量采购了清洁机器人、具身智能，需要集成到物业系统，与原有的摄像头/道闸/门禁等设备协作。</p><p>需要一个统一调度平台，最好像claude code一样可以灵活调用。</p></article><article class="bp-quote" data-anim><h3>IoT开发者（开源使用者）</h3><p>调动智能家居这件事，全世界都在重复造轮子，我的claude code确实也可以强行自己写联通器，但是要花费我大概5美金，而且bug时常出现，不稳定。</p><p>而且设备驱动可能会更新，不如直接使用平台仓库。</p></article></div>
+    <div class="bp-quote-grid"><article class="bp-quote" data-anim><h3>众擎机器人</h3><p class="bp-quote-main">“如果有一个统一用户界面，可以调动多台机器人、自然语言交互，这种应用每一个用户都需要。”</p><p><span>原初目的</span>深圳展厅机器人联通，寻找场景物联网集成方落地部署。</p><p><span>延伸目的</span>降低多机器人部署和二次开发成本，形成可复用的统一调度入口。</p></article><article class="bp-quote" data-anim><h3>颗粒进化 xlean</h3><p class="bp-quote-main">“你们像物联网上的 OpenRouter，交一份钱，一个 API 全打通。”</p><p><span>原初目的</span>探索清洁机器人本体与智能家居的联动场景。</p><p><span>延伸目的</span>把设备通讯升级为类似 A2A 的跨硬件协作网络。</p></article><article class="bp-quote" data-anim><h3>碧桂园物业</h3><p class="bp-quote-main">“需要一个统一调度平台，最好像 Claude Code 一样可以灵活调用。”</p><p><span>原初目的</span>把清洁机器人、具身智能接入物业系统，并协同摄像头、道闸、门禁。</p><p><span>延伸目的</span>让物业场景从系统集成走向智能体可调用的任务执行平台。</p></article><article class="bp-quote" data-anim><h3>IoT 开发者</h3><p class="bp-quote-main">“全世界都在重复造轮子，不如直接使用平台仓库。”</p><p><span>原初目的</span>避免每次用 Coding Agent 重新编写不稳定的智能家居连接器。</p><p><span>延伸目的</span>把设备驱动更新、能力维护和复用交给平台资源库。</p></article></div>
   </div>
   <div class="foot"><div>Page 07</div><div>Customer Validation</div></div>
 </section>
@@ -811,7 +835,6 @@
 <section class="slide light bp-section-slide bp-financing">
   <div class="chrome"><div>融资计划</div><div>11 / 12</div></div>
   <div class="frame bp-section-frame">
-    <h2 class="bp-section-title" data-anim>融资不是单点金额，而是从已验证闭环进入规模化扩张。</h2>
     <div class="bp-finance-grid">
       <article class="bp-finance-block" data-anim>
         <div class="bp-finance-meta">Previous Round</div>
