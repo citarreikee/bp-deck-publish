@@ -463,6 +463,7 @@
   .bp-market .bp-market-frame{padding-top:6.8vh!important}.bp-market .bp-market-title{font-family:var(--sans-zh);font-size:max(20px,1.45vw);line-height:1.42;font-weight:500;letter-spacing:0;max-width:72vw;opacity:.78;border-left:2px solid rgba(var(--ink-rgb),.45);padding-left:1.2vw}.bp-market .bp-market-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:.9vw;margin-top:2.3vh}.bp-market .bp-market-card{grid-column:span 2;min-height:21vh;padding:1.55vh 1vw}.bp-market .bp-market-card:nth-child(n+4){grid-column:span 3}.bp-market .bp-market-value{font-size:clamp(30px,2.35vw,48px);line-height:1;white-space:nowrap;letter-spacing:-.04em;margin-bottom:.85vh}.bp-market .bp-market-topic{font-size:max(15px,1.02vw);line-height:1.18;margin-bottom:.8vh}.bp-market .bp-market-note{font-size:max(12px,.72vw);line-height:1.42}.bp-market .bp-mini-table{grid-template-columns:.55fr 2.45fr;margin-top:1.55vh}.bp-market .bp-mini-cell{font-size:max(12px,.7vw);padding:.7vh .8vw}.bp-market .bp-market-gap{font-family:var(--serif-zh);font-size:clamp(24px,2vw,42px)}@media (max-width:1100px){.bp-market .bp-market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bp-market .bp-market-card,.bp-market .bp-market-card:nth-child(n+4){grid-column:auto}}@media (max-width:760px){.bp-market .bp-market-title{font-size:20px!important;max-width:none!important;padding-left:14px}.bp-market .bp-market-value{font-size:13vw!important;white-space:normal}}
   .bp-executive .bp-summary-frame{padding-top:7.8vh!important}.bp-executive .bp-summary-ledger{display:grid;grid-template-columns:1fr;gap:0;margin-top:0;max-width:82vw}.bp-executive .bp-summary-row{border-top:1px solid rgba(var(--ink-rgb),.2);padding:1.28vh 0 1.18vh}.bp-executive .bp-summary-row:last-child{border-bottom:1px solid rgba(var(--ink-rgb),.15)}.bp-executive .bp-summary-row-head{display:flex;align-items:baseline;gap:1vw;margin-bottom:.52vh}.bp-executive .bp-summary-no{font-family:var(--mono);font-size:max(10px,.62vw);letter-spacing:.18em;text-transform:uppercase;opacity:.42;margin:0;min-width:2.7em}.bp-executive .bp-summary-row h3{font-family:var(--serif-zh);font-size:max(19px,1.38vw);line-height:1.08;margin:0}.bp-executive .bp-summary-row p{font-family:var(--sans-zh);font-size:max(12px,.76vw);line-height:1.48;opacity:.78;margin:0 0 .42vh 3.7em;overflow-wrap:anywhere}.bp-executive .bp-summary-row p:last-child{margin-bottom:0}@media (max-width:900px){.bp-executive .bp-summary-ledger{max-width:none}.bp-executive .bp-summary-row{padding:2vh 0}.bp-executive .bp-summary-row-head{display:block}.bp-executive .bp-summary-no{display:block;margin-bottom:.5vh}.bp-executive .bp-summary-row h3{font-size:24px}.bp-executive .bp-summary-row p{font-size:16px;margin-left:0}}
   .bp-product .bp-product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;margin-top:2.6vh}.bp-product .bp-product-card{min-height:22vh}.bp-product .bp-product-card.scenario{grid-column:1 / -1;min-height:0}.bp-product .bp-benchmark-row{display:grid;grid-template-columns:1fr 1fr;gap:.75vw;margin-top:1.2vh}.bp-product .bp-benchmark{border-top:1px solid rgba(var(--ink-rgb),.22);padding-top:1vh}.bp-product .bp-benchmark h4{font-family:var(--mono);font-size:max(11px,.68vw);letter-spacing:.14em;text-transform:uppercase;opacity:.55;margin:0 0 .55vh}.bp-product .bp-benchmark p{margin:0!important;font-size:max(12px,.72vw)!important;line-height:1.42!important}@media (max-width:900px){.bp-product .bp-product-grid,.bp-product .bp-benchmark-row{grid-template-columns:1fr}.bp-product .bp-product-card.scenario{grid-column:auto}}
+  .bp-closing .bp-section-frame{justify-content:center!important}.bp-closing .bp-vision-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);gap:4vw;align-items:end;width:100%}.bp-closing .bp-vision-lines{display:grid;gap:2.8vh}.bp-closing .bp-vision-line{font-family:var(--serif-zh);font-size:min(4.8vw,8.5vh);line-height:1.03;font-weight:700;letter-spacing:-.035em;max-width:11em}.bp-closing .bp-contact-panel{border-top:1px solid rgba(255,255,255,.45);padding-top:2vh;display:grid;gap:1.4vh;justify-items:start}.bp-closing .bp-contact-panel img{width:min(18vw,190px);height:auto;background:#fff;padding:10px}.bp-closing .bp-contact{display:grid;gap:.65vh;margin-top:0!important;font-size:max(12px,.78vw)!important}.bp-closing .bp-contact span{border-top:0!important;padding-top:0!important}@media (max-width:900px){.bp-closing .bp-vision-grid{grid-template-columns:1fr;align-items:start}.bp-closing .bp-vision-line{font-size:11vw;max-width:none}.bp-closing .bp-contact-panel img{width:180px}}
 </style>
 
 </head>
@@ -682,10 +683,18 @@
 
 <section class="slide hero dark bp-section-slide bp-closing">
   <div class="chrome"><div>愿景 &amp; 联系方式</div><div>12 / 12</div></div>
-  <div class="frame bp-section-frame" style="justify-content:center!important">
-    <h1 class="bp-cover-title" style="max-width:10em" data-anim>每一个空间，都成为可被理解和操作的系统</h1>
-    <p class="bp-cover-desc" data-anim>每一个设备，既是执行器，也是感知节点 / 每一个 Agent，都可以直接作用于现实世界</p>
-    <div class="bp-contact" data-anim><span>对接人： 孙卓见</span><span>电    话:   +86 13528476469</span><span>邮    箱:   jojorn@entropyfield.com</span><span>地    址:   深圳市南山区云科技大厦606</span></div>
+  <div class="frame bp-section-frame">
+    <div class="bp-vision-grid">
+      <div class="bp-vision-lines" data-anim>
+        <div class="bp-vision-line">每一个空间，都成为可被理解和操作的系统</div>
+        <div class="bp-vision-line">每一个设备，既是执行器，也是感知节点</div>
+        <div class="bp-vision-line">每一个 Agent，都可以直接作用于现实世界</div>
+      </div>
+      <div class="bp-contact-panel" data-anim>
+        <img src="images/contact-qrcode.png" alt="Contact QR code">
+        <div class="bp-contact"><span>对接人：孙卓见</span><span>电话：+86 13528476469</span><span>邮箱：jojorn@entropyfield.com</span><span>地址：深圳市南山区云科技大厦606</span></div>
+      </div>
+    </div>
   </div>
   <div class="foot"><div>Page 12</div><div>Vision &amp; Contact</div></div>
 </section>
