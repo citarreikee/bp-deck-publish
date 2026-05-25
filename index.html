@@ -481,6 +481,9 @@
 </style>
 <style id="bp-slide-hierarchy-fix">
   .bp-market .bp-market-title{font-family:var(--serif-zh)!important;font-size:clamp(30px,4.8vw,56px)!important;line-height:1.08!important;font-weight:700!important;letter-spacing:-.02em!important;max-width:100%!important;opacity:1!important;border-left:0!important;padding-left:0!important}
+  .bp-product .bp-scenario-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;margin-top:1.2vh}
+  .bp-product .bp-scenario-grid h4{font-family:var(--serif-zh);font-size:clamp(17px,1.25vw,22px);line-height:1.15;margin:0 0 .8vh}
+  .bp-product .bp-scenario-grid>div{border-top:1px solid rgba(var(--ink-rgb),.22);padding-top:1.1vh}
   .bp-business .bp-section-title{font-size:clamp(30px,4vw,58px)!important;max-width:100%!important;white-space:nowrap}
   .bp-validation .bp-section-frame{padding-top:6.8vh!important}
   .bp-validation .bp-quote-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.1vw;margin-top:0}
@@ -501,6 +504,8 @@
     .bp-validation .bp-quote{min-height:0}
   }
   @media (max-width:760px){
+    .bp-product .bp-scenario-grid{display:block}
+    .bp-product .bp-scenario-grid>div{margin-bottom:18px}
     .bp-validation .bp-quote-grid{display:block}
     .bp-validation .bp-quote{padding:18px 0 18px 16px}
   }
@@ -737,8 +742,8 @@
         </div>
       </article>
       <article class="bp-card bp-product-card scenario" data-anim>
-        <div class="bp-card-label">SCENARIO</div><h3>科研实验室自动化</h3>
-        <p>用户下达「完成本次生物样本的预处理全流程」，系统自动调度离心机、恒温箱、移液器等多品牌异构设备，按照实验规范完成操作，实时监测设备状态与环境参数，异常情况自动停机并上报，全程无需人工值守，为实验室降低 60% 的人工成本。</p>
+        <div class="bp-card-label">SCENARIO</div><h3>应用场景</h3>
+        <div class="bp-scenario-grid"><div><h4>科研实验室自动化</h4><p>用户下达「完成本次生物样本的预处理全流程」，系统自动调度离心机、恒温箱、移液器等多品牌异构设备，按照实验规范完成操作，实时监测设备状态与环境参数，异常情况自动停机并上报，全程无需人工值守，为实验室降低 60% 的人工成本。</p></div><div><h4>具身智能楼宇巡检</h4><p>物业运营方下达「完成夜间楼宇安全巡检」，系统调度轮式机器人、门禁、摄像头、电梯与照明系统协同执行。机器人按路线巡检异常人员、漏水、烟雾和设备故障，必要时联动开门、呼梯、补光、抓拍和上报工单。</p></div></div>
       </article>
     </div>
   </div>
