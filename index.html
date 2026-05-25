@@ -514,6 +514,19 @@
     .bp-roadmap .bp-timeline .bp-card ul{display:block!important;padding-left:1em!important;margin:0!important}
     .bp-roadmap .bp-timeline .bp-card li{font-size:clamp(10px,1.08vw,12px)!important;line-height:1.22!important;margin:0 0 .2vh!important}
   }
+  @media (orientation:landscape) and (min-width:761px){
+    .bp-roadmap{overflow:hidden!important}
+    .bp-roadmap .foot{display:none}
+    .bp-roadmap .bp-section-frame{padding-top:5.6vh!important;min-height:0!important;padding-bottom:0!important}
+    .bp-roadmap .bp-section-title{font-size:clamp(22px,3.4vw,42px)!important;line-height:1.05!important;max-width:92vw!important}
+    .bp-roadmap .bp-timeline{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:1vw!important;margin-top:2.4vh!important}
+    .bp-roadmap .bp-timeline .bp-card{display:block!important;min-height:0!important;max-height:62vh!important;padding:1.25vh 1vw!important;overflow:hidden!important}
+    .bp-roadmap .bp-timeline .bp-card>h3{font-size:clamp(15px,1.35vw,21px)!important;line-height:1.1!important;margin:0 0 .9vh!important}
+    .bp-roadmap .bp-timeline .bp-card-label{font-size:9px!important;line-height:1!important;letter-spacing:.12em!important;margin:0 0 .45vh!important}
+    .bp-roadmap .bp-timeline .bp-card-sublabel{margin-top:.7vh!important}
+    .bp-roadmap .bp-timeline .bp-card ul{display:block!important;padding-left:1em!important;margin:0!important}
+    .bp-roadmap .bp-timeline .bp-card li{font-size:clamp(10px,.88vw,13px)!important;line-height:1.25!important;margin:0 0 .22vh!important}
+  }
   @media (max-width:760px){
     html,body{overflow:hidden}
     #deck{position:fixed!important;inset:0!important;width:1200vw!important;height:100dvh!important;display:flex!important;flex-wrap:nowrap!important;transform:translateX(0);touch-action:auto}
