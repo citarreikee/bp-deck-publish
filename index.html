@@ -503,6 +503,8 @@
   .bp-closing .bp-contact-panel img{width:min(12vw,150px)!important;border-radius:18px}
   .bp-closing .bp-contact{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:1vh 1.2vw!important;margin-top:0!important;width:min(68vw,980px)}
   .bp-closing .bp-contact span{display:block!important;border:1px solid rgba(255,255,255,.18)!important;border-top:1px solid rgba(255,255,255,.18)!important;border-radius:14px;padding:1.05vh 1vw!important;background:rgba(255,255,255,.045);color:rgba(var(--paper-rgb),.82);line-height:1.35}
+  .bp-team .bp-team-person{display:grid;grid-template-columns:72px minmax(0,1fr);gap:1.1vw;align-items:center}
+  .bp-team .bp-team-avatar{width:72px;height:72px;border-radius:50%;object-fit:cover;display:block;border:1px solid rgba(var(--ink-rgb),.18);filter:grayscale(.08)}
   .bp-team .bp-team-row.advisor{margin-top:2.2vh;border-top:2px solid rgba(var(--ink-rgb),.46);background:linear-gradient(90deg,rgba(var(--ink-rgb),.045),rgba(var(--ink-rgb),.02));padding:1.8vh 0}
   .bp-team .bp-team-row.advisor .bp-team-role{opacity:.62}
   .bp-business .bp-section-title{font-size:clamp(30px,4vw,58px)!important;max-width:100%!important;white-space:nowrap}
@@ -572,6 +574,8 @@
     .bp-product .bp-product-card.scenario{grid-column:auto!important}
     .bp-business .bp-business-head,.bp-moat .bp-moat-head{grid-template-columns:1fr!important;gap:.8vh}
     .bp-team .bp-team-row.advisor{margin-top:28px;padding:22px 0;background:transparent}
+    .bp-team .bp-team-person{grid-template-columns:58px minmax(0,1fr);gap:14px}
+    .bp-team .bp-team-avatar{width:58px;height:58px}
     .bp-business .bp-business-layer,.bp-moat .bp-moat-layer{padding:2vh 0}
     .bp-roadmap .bp-timeline .bp-card{grid-template-columns:1fr!important}
     .bp-roadmap .bp-timeline .bp-card>h3{grid-column:auto!important;grid-row:auto!important}
@@ -868,15 +872,15 @@
     <h2 class="bp-section-title" data-anim>兼具「千万级 IoT 设备规模化落地能力」与「大模型全链路研发能力」的核心团队</h2>
     <div class="bp-team-stack">
       <article class="bp-team-row" data-anim>
-        <div><div class="bp-team-role">FOUNDER / CEO</div><h3>孙卓见 创始人&amp;CEO</h3></div>
+        <div class="bp-team-person"><img class="bp-team-avatar" src="images/team-sun-zhuojian.jpg" alt="孙卓见"><div><div class="bp-team-role">FOUNDER / CEO</div><h3>孙卓见 创始人&amp;CEO</h3></div></div>
         <div><p>西安交通大学 &amp; KIT 联合培养软件工程硕士，国家重点实验室核心成员。</p><p>曾主导平安银行「星云物联网」计划，完成 2000 万 + 设备规模化接入，深度理解物联网行业的协议碎片化痛点、企业客户的核心需求与规模化落地路径。</p><p>2024 年创立熵增力场，全程主导产品从 0 到 1 的设计与商业落地，带领团队实现产品上线与盈利闭环。</p></div>
       </article>
       <article class="bp-team-row" data-anim>
-        <div><div class="bp-team-role">CO-FOUNDER / CTO</div><h3>张起 联创&amp;CTO</h3></div>
+        <div class="bp-team-person"><img class="bp-team-avatar" src="images/team-zhang-qi.jpg" alt="张起"><div><div class="bp-team-role">CO-FOUNDER / CTO</div><h3>张起 联创&amp;CTO</h3></div></div>
         <div><p>西安交通大学软件工程硕士，学科成绩第一。</p><p>曾任职华为，核心负责昇腾硬件推理加速、盘古大模型研发工作，完整掌握大模型训练、端侧推理、硬件适配的全链路技术能力，深刻理解 AI 与硬件结合的核心技术痛点。</p><p>2025 年加入团队，主导核心技术架构设计与空间智能模型研发。</p></div>
       </article>
       <article class="bp-team-row advisor" data-anim>
-        <div><div class="bp-team-role">EXPERT ADVISOR</div><h3>梅雪松 教授</h3></div>
+        <div class="bp-team-person"><img class="bp-team-avatar" src="images/team-mei-xuesong.jpg" alt="梅雪松"><div><div class="bp-team-role">EXPERT ADVISOR</div><h3>梅雪松 教授</h3></div></div>
         <div><p>长江学者，先进制造与工业软件领域专家。</p><p>曾参与 2035 年国家中长期科技发展规划先进制造领域专家组、十四五「工业软件」国家重点研发计划专家组、十三五「网络化协同制造和智能工厂」国家重点研发计划专家组，以及国家 863 计划先进制造领域专家工作。</p><p>作为专家顾问，为团队提供工业制造、智能工厂、产学研协同与技术路线判断支持。</p></div>
       </article>
     </div>
