@@ -501,9 +501,9 @@
   }
   @media (max-width:760px){
     html,body{overflow:hidden}
-    #deck{height:100dvh}
-    .slide{height:100dvh;display:block!important;padding:48px 22px 72px!important}
-    .bp-section-slide,.bp-market-slide,.bp-summary-slide{overflow-y:auto!important;overflow-x:hidden!important}
+    #deck{height:100dvh;touch-action:pan-y}
+    .slide{height:100dvh;display:block!important;padding:48px 22px 72px!important;overflow-y:auto!important;overflow-x:hidden!important;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;touch-action:pan-y}
+    .bp-section-slide,.bp-market-slide,.bp-summary-slide{overflow-y:auto!important;overflow-x:hidden!important;-webkit-overflow-scrolling:touch;touch-action:pan-y}
     .bp-section-frame,.bp-market-frame,.bp-summary-frame{display:block!important;min-height:auto!important;padding-top:0!important}
     .bp-cover-title{font-size:13vw!important;line-height:1.02!important}
     .bp-cover-desc{font-size:18px!important;line-height:1.45!important}
@@ -1077,6 +1077,7 @@ addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].client
 addEventListener('touchend',e=>{
   const dx=(e.changedTouches[0].clientX-tx);
   const dy=(e.changedTouches[0].clientY-ty);
+  if(Math.abs(dy)>Math.abs(dx)) return;
   if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){
     if(dx<0 && window.__pipeAdvance && window.__pipeAdvance()) return;
     go(idx+(dx<0?1:-1));
