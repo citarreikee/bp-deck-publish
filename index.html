@@ -464,6 +464,7 @@
   .bp-executive .bp-summary-frame{padding-top:7.8vh!important}.bp-executive .bp-summary-ledger{display:grid;grid-template-columns:1fr;gap:0;margin-top:0;max-width:82vw}.bp-executive .bp-summary-row{border-top:1px solid rgba(var(--ink-rgb),.2);padding:1.28vh 0 1.18vh}.bp-executive .bp-summary-row:last-child{border-bottom:1px solid rgba(var(--ink-rgb),.15)}.bp-executive .bp-summary-row-head{display:flex;align-items:baseline;gap:1vw;margin-bottom:.52vh}.bp-executive .bp-summary-no{font-family:var(--mono);font-size:max(10px,.62vw);letter-spacing:.18em;text-transform:uppercase;opacity:.42;margin:0;min-width:2.7em}.bp-executive .bp-summary-row h3{font-family:var(--serif-zh);font-size:max(19px,1.38vw);line-height:1.08;margin:0}.bp-executive .bp-summary-row p{font-family:var(--sans-zh);font-size:max(12px,.76vw);line-height:1.48;opacity:.78;margin:0 0 .42vh 3.7em;overflow-wrap:anywhere}.bp-executive .bp-summary-row p:last-child{margin-bottom:0}@media (max-width:900px){.bp-executive .bp-summary-ledger{max-width:none}.bp-executive .bp-summary-row{padding:2vh 0}.bp-executive .bp-summary-row-head{display:block}.bp-executive .bp-summary-no{display:block;margin-bottom:.5vh}.bp-executive .bp-summary-row h3{font-size:24px}.bp-executive .bp-summary-row p{font-size:16px;margin-left:0}}
   .bp-product .bp-product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;margin-top:2.6vh}.bp-product .bp-product-card{min-height:22vh}.bp-product .bp-product-card.scenario{grid-column:1 / -1;min-height:0}.bp-product .bp-benchmark-row{display:grid;grid-template-columns:1fr 1fr;gap:.75vw;margin-top:1.2vh}.bp-product .bp-benchmark{border-top:1px solid rgba(var(--ink-rgb),.22);padding-top:1vh}.bp-product .bp-benchmark h4{font-family:var(--mono);font-size:max(11px,.68vw);letter-spacing:.14em;text-transform:uppercase;opacity:.55;margin:0 0 .55vh}.bp-product .bp-benchmark p{margin:0!important;font-size:max(12px,.72vw)!important;line-height:1.42!important}@media (max-width:900px){.bp-product .bp-product-grid,.bp-product .bp-benchmark-row{grid-template-columns:1fr}.bp-product .bp-product-card.scenario{grid-column:auto}}
   .bp-closing .bp-section-frame{justify-content:center!important}.bp-closing .bp-vision-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);gap:4vw;align-items:end;width:100%}.bp-closing .bp-vision-lines{display:grid;gap:2.8vh}.bp-closing .bp-vision-line{font-family:var(--serif-zh);font-size:min(4.8vw,8.5vh);line-height:1.03;font-weight:700;letter-spacing:-.035em;max-width:11em}.bp-closing .bp-contact-panel{border-top:1px solid rgba(255,255,255,.45);padding-top:2vh;display:grid;gap:1.4vh;justify-items:start}.bp-closing .bp-contact-panel img{width:min(18vw,190px);height:auto;background:#fff;padding:10px}.bp-closing .bp-contact{display:grid;gap:.65vh;margin-top:0!important;font-size:max(12px,.78vw)!important}.bp-closing .bp-contact span{border-top:0!important;padding-top:0!important}@media (max-width:900px){.bp-closing .bp-vision-grid{grid-template-columns:1fr;align-items:start}.bp-closing .bp-vision-line{font-size:11vw;max-width:none}.bp-closing .bp-contact-panel img{width:180px}}
+  .bp-financing .bp-section-title{font-size:min(3.6vw,6.2vh);max-width:70vw}.bp-financing .bp-finance-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:1.4vw;margin-top:2.6vh}.bp-financing .bp-finance-block{border-top:1px solid rgba(var(--ink-rgb),.34);background:rgba(var(--paper-rgb),.3);padding:2vh 1.35vw;min-height:48vh}.bp-financing .bp-finance-block h3{font-family:var(--serif-zh);font-size:max(26px,2vw);line-height:1.1;margin:.5vh 0 1.4vh}.bp-financing .bp-finance-meta{font-family:var(--mono);font-size:max(12px,.75vw);letter-spacing:.12em;text-transform:uppercase;opacity:.5}.bp-financing .bp-finance-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:.8vw;margin:1.6vh 0}.bp-financing .bp-finance-kpi{border-top:1px solid rgba(var(--ink-rgb),.22);padding-top:.85vh}.bp-financing .bp-finance-kpi strong{display:block;font-family:var(--serif-en),var(--serif-zh);font-size:max(24px,2vw);line-height:1}.bp-financing .bp-finance-kpi span{display:block;font-family:var(--sans-zh);font-size:max(12px,.72vw);line-height:1.35;opacity:.72;margin-top:.45vh}.bp-financing .bp-finance-block p,.bp-financing .bp-finance-block li{font-family:var(--sans-zh);font-size:max(12px,.76vw);line-height:1.5;opacity:.76}.bp-financing .bp-finance-block ul{padding-left:1.1em;margin:1vh 0 0;display:grid;gap:.55vh}.bp-financing .bp-finance-subtitle{font-family:var(--mono);font-size:max(11px,.68vw);letter-spacing:.16em;text-transform:uppercase;opacity:.48;margin-top:1.6vh}@media (max-width:900px){.bp-financing .bp-finance-grid{grid-template-columns:1fr}.bp-financing .bp-finance-block{min-height:0}.bp-financing .bp-finance-kpis{grid-template-columns:1fr}}
 </style>
 
 </head>
@@ -673,10 +674,44 @@
 <section class="slide light bp-section-slide bp-financing">
   <div class="chrome"><div>融资计划</div><div>11 / 12</div></div>
   <div class="frame bp-section-frame">
-    <h2 class="bp-section-title" data-anim>融资计划</h2>
-    <div class="bp-card-grid"><article class="bp-card" data-anim><div class="bp-card-label">FINANCING</div><h3>融资历史</h3><p>种子轮丨$ 300K丨7%丨奇绩创坛丨2025.07</p></article><article class="bp-card" data-anim><div class="bp-card-label">FINANCING</div><h3>里程碑</h3><p>完成核心技术储备、EntroFlow 产品研发、0-1 商业闭环验证，实现盈利</p></article><article class="bp-card" data-anim><div class="bp-card-label">FINANCING</div><h3>本轮融资计划（天使轮）</h3><p>拟融资金额：$ 1M</p></article></div>
-    <div class="bp-card-grid"><article class="bp-card" data-anim><div class="bp-card-label">USE</div><h3>30%</h3><p>商务，扩展 EntroFlow 设备品类 &amp; 生态伙伴，落地标杆场景</p></article><article class="bp-card" data-anim><div class="bp-card-label">USE</div><h3>50%</h3><p>购买算力，训练构建数据集标准，构建行业benchmark，训练自有模型和AI Agent和端侧适配</p></article><article class="bp-card" data-anim><div class="bp-card-label">USE</div><h3>20%</h3><p>运营，资源/算力/合规，目标GitHub Star 破 10k，注册开发者数破 10 万</p></article></div>
-    <div class="bp-card-grid"><article class="bp-card" data-anim><div class="bp-card-label">12-18 MONTHS</div><h3>里程碑 12~18个月</h3><p>生态支持10000+类开源设备接入和直接使用，API月调用破千万</p><p>自有空间智能模型实现任务级执行稳定运行，完成主流端侧推理芯片适配</p><p>企业版 AI 实现明确付费转化API收入3000万人民币，标准订阅占80%</p></article></div>
+    <h2 class="bp-section-title" data-anim>融资不是单点金额，而是从已验证闭环进入规模化扩张。</h2>
+    <div class="bp-finance-grid">
+      <article class="bp-finance-block" data-anim>
+        <div class="bp-finance-meta">Previous Round</div>
+        <h3>上一轮融资：种子轮</h3>
+        <div class="bp-finance-kpis">
+          <div class="bp-finance-kpi"><strong>$300K</strong><span>融资金额</span></div>
+          <div class="bp-finance-kpi"><strong>7%</strong><span>出让股份</span></div>
+          <div class="bp-finance-kpi"><strong>2025.07</strong><span>奇绩创坛</span></div>
+        </div>
+        <div class="bp-finance-subtitle">Delivered</div>
+        <ul>
+          <li>完成核心技术储备与 EntroFlow 产品研发。</li>
+          <li>完成 0-1 商业闭环验证，并已实现盈利。</li>
+        </ul>
+      </article>
+      <article class="bp-finance-block" data-anim>
+        <div class="bp-finance-meta">Current Round</div>
+        <h3>本轮融资：天使轮</h3>
+        <div class="bp-finance-kpis">
+          <div class="bp-finance-kpi"><strong>$1M</strong><span>拟融资金额</span></div>
+          <div class="bp-finance-kpi"><strong>12-18</strong><span>个月目标周期</span></div>
+          <div class="bp-finance-kpi"><strong>3000万</strong><span>目标年收入 RMB</span></div>
+        </div>
+        <div class="bp-finance-subtitle">Use of Funds</div>
+        <ul>
+          <li>30% 商务：扩展 EntroFlow 设备品类与生态伙伴，落地标杆场景。</li>
+          <li>50% 算力与模型：构建数据集标准、行业 benchmark，训练自有模型和 AI Agent，并完成端侧适配。</li>
+          <li>20% 运营与合规：覆盖资源、算力、合规与开发者运营，目标 GitHub Star 破 10k、注册开发者破 10 万。</li>
+        </ul>
+        <div class="bp-finance-subtitle">Milestones</div>
+        <ul>
+          <li>生态支持 10000+ 类开源设备接入和直接使用，API 月调用破千万。</li>
+          <li>自有空间智能模型实现任务级执行稳定运行，完成主流端侧推理芯片适配。</li>
+          <li>企业版 AI 形成明确付费转化，标准订阅占收入 80%。</li>
+        </ul>
+      </article>
+    </div>
   </div>
   <div class="foot"><div>Page 11</div><div>Financing</div></div>
 </section>
