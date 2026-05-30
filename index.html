@@ -680,6 +680,37 @@
   })();
 </script>
 
+<style id="bp-language-toggle">
+  .lang-toggle{
+    position:absolute;
+    top:3.6vh;
+    right:6vw;
+    z-index:40;
+    border:1px solid currentColor;
+    border-radius:999px;
+    background:rgba(255,255,255,.08);
+    color:inherit;
+    padding:7px 11px;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    opacity:.62;
+    cursor:pointer;
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    transition:opacity .2s ease,transform .2s ease,background .2s ease;
+  }
+  .lang-toggle:hover{opacity:1;transform:translateY(-1px)}
+  .slide.light .lang-toggle{background:rgba(10,10,11,.035)}
+  .slide.dark .lang-toggle{background:rgba(255,255,255,.08)}
+  body.lang-en .lang-toggle .zh-label,
+  body:not(.lang-en) .lang-toggle .en-label{display:none}
+  @media (max-width:760px){
+    .lang-toggle{position:fixed;top:14px;right:14px;padding:7px 10px;font-size:10px;background:rgba(255,255,255,.82)!important;color:var(--ink)!important}
+  }
+</style>
+
 <canvas id="bg-dark" class="bg"></canvas>
 <canvas id="bg-light" class="bg"></canvas>
 <div id="hint">← → 翻页 · B 静态 · ESC 索引</div>
@@ -1235,6 +1266,7 @@ go(0);
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>lucide.createIcons();</script>
+<script src="bp-i18n.js"></script>
 
 <!-- ============ Motion One 动效引擎（本地优先,CDN 兜底） ============
      加载策略:先 ./assets/motion.min.js(本地,离线可用),失败 fallback 到 jsDelivr CDN
