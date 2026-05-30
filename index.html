@@ -586,7 +586,7 @@
     .bp-closing .bp-contact-panel img{width:min(42vw,180px)}
   }
   @media (orientation:landscape) and (max-height:620px){
-    .bp-roadmap{overflow:hidden!important}
+    .bp-roadmap{overflow-y:auto!important;overflow-x:hidden!important}
     .bp-roadmap .chrome{top:3vh}
     .bp-roadmap .foot{display:none}
     .bp-roadmap .bp-section-frame{padding-top:5.4vh!important;min-height:0!important;padding-bottom:0!important}
@@ -606,19 +606,19 @@
     .bp-roadmap .bp-section-frame{padding-top:5.6vh!important;min-height:0!important;padding-bottom:0!important}
     .bp-roadmap .bp-section-title{font-size:clamp(30px,4.8vw,56px)!important;line-height:1.08!important;max-width:92vw!important}
     .bp-roadmap .bp-timeline{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:1vw!important;margin-top:2.4vh!important}
-    .bp-roadmap .bp-timeline .bp-card{display:flex!important;flex-direction:column!important;min-height:68vh!important;max-height:72vh!important;padding:1.7vh 1.05vw!important;overflow:hidden!important}
-    .bp-roadmap .bp-timeline .bp-card>h3{font-size:clamp(15px,1.35vw,21px)!important;line-height:1.1!important;margin:0 0 .9vh!important}
+    .bp-roadmap .bp-timeline .bp-card{display:flex!important;flex-direction:column!important;min-height:0!important;max-height:none!important;padding:1.35vh .92vw!important;overflow:visible!important}
+    .bp-roadmap .bp-timeline .bp-card>h3{font-size:clamp(14px,1.18vw,19px)!important;line-height:1.08!important;margin:0 0 .65vh!important}
     .bp-roadmap .bp-timeline .bp-card-label{font-size:9px!important;line-height:1!important;letter-spacing:.12em!important;margin:0 0 .45vh!important}
     .bp-roadmap .bp-timeline .bp-card-sublabel{margin-top:0!important}
     .bp-roadmap .bp-timeline .bp-card ul{display:block!important;padding-left:0!important;margin:0!important;list-style:none!important}
     .bp-roadmap .bp-timeline .bp-card li{list-style:none!important}
-    .bp-roadmap .bp-timeline .bp-card li{font-size:clamp(9.5px,.82vw,12.5px)!important;line-height:1.2!important;margin:0 0 .18vh!important}
-    .bp-roadmap .bp-timeline .bp-card ul:first-of-type{min-height:15vh}
-    .bp-roadmap .bp-timeline .bp-card .bp-card-sublabel + ul:not(.bp-milestone-list){min-height:5.6vh}
+    .bp-roadmap .bp-timeline .bp-card li{font-size:clamp(9px,.72vw,11.5px)!important;line-height:1.16!important;margin:0 0 .12vh!important}
+    .bp-roadmap .bp-timeline .bp-card ul:first-of-type{min-height:0}
+    .bp-roadmap .bp-timeline .bp-card .bp-card-sublabel + ul:not(.bp-milestone-list){min-height:0}
     .bp-roadmap .bp-timeline .bp-card ul:last-of-type{margin-top:0!important}
-    .bp-roadmap .bp-milestone-list{border-top:1px solid rgba(var(--ink-rgb),.18);padding-top:.7vh!important;min-height:9.5vh}
-    .bp-roadmap .bp-milestone-label{margin-top:.75vh!important}
-    .bp-roadmap-time{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.8vw;margin:auto 0 1.25vh;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.62}
+    .bp-roadmap .bp-milestone-list{border-top:1px solid rgba(var(--ink-rgb),.18);padding-top:.55vh!important;min-height:0}
+    .bp-roadmap .bp-milestone-label{margin-top:.55vh!important}
+    .bp-roadmap-time{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.8vw;margin:.75vh 0 .75vh;font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;opacity:.62}
     .bp-roadmap-time b{display:block;height:1px;background:currentColor;opacity:.55}
   }
   @media (max-width:760px){
