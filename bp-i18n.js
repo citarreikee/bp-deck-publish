@@ -228,19 +228,17 @@
     return nodes;
   }
 
-  function addButtons(applyLanguage) {
-    document.querySelectorAll('.slide').forEach((slide) => {
-      if (slide.querySelector('.lang-toggle')) return;
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'lang-toggle';
-      button.setAttribute('aria-label', 'Switch language');
-      button.innerHTML = '<span class="en-label">EN</span><span class="zh-label">中文</span>';
-      button.addEventListener('click', () => {
-        applyLanguage(document.body.classList.contains('lang-en') ? 'zh' : 'en');
-      });
-      slide.appendChild(button);
+  function addButton(applyLanguage) {
+    if (document.querySelector('.lang-toggle')) return;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'lang-toggle';
+    button.setAttribute('aria-label', 'Switch language');
+    button.innerHTML = '<span class="en-label">EN</span><span class="zh-label">中文</span>';
+    button.addEventListener('click', () => {
+      applyLanguage(document.body.classList.contains('lang-en') ? 'zh' : 'en');
     });
+    document.body.appendChild(button);
   }
 
   function init() {
@@ -260,7 +258,7 @@
       history.replaceState(null, '', url);
     };
 
-    addButtons(applyLanguage);
+    addButton(applyLanguage);
     const initial = new URLSearchParams(location.search).get('lang') || localStorage.getItem('bp-lang') || 'zh';
     applyLanguage(initial === 'en' ? 'en' : 'zh');
     window.__bpSetLanguage = applyLanguage;
