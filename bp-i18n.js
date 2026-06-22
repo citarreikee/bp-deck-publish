@@ -121,7 +121,7 @@
     '证明 AI 可以真实作用于物理世界': 'Prove that AI can truly act on the physical world.',
     '验证产品可行性，找到商业落地场景': 'Validate product feasibility and identify commercial landing scenarios.',
     '已完成里程碑': 'Completed Milestones',
-    '已经实现盈利 300w +': 'Achieved RMB 3M+ profit.',
+    '已经实现营收 300w +': 'Achieved RMB 3M+ revenue.',
     '开放基础设施（进行中）': 'Open Infrastructure (In Progress)',
     '标准化设备 skill（md / py / mcp）': 'Standardized device skills (md / py / mcp)',
     '开放设备接入与能力注册': 'Open device access and capability registration',
